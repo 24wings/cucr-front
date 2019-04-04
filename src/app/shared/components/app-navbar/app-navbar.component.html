@@ -1,0 +1,28 @@
+<div class="app-head clear">
+    <div class="app-head-inner  container">
+        <div class="app-head-img fl">
+            <a routerLink="/"><img src="/assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="app-nav fl">
+            <ul class="beard1 fl">
+                <li class="cursor beardActive"><a routerLink="/">主页</a></li>
+                <li class="cursor"><a routerLink="/projects">项目</a></li>
+                <li class="cursor"><a routerLink="/news">新闻</a></li>
+                <li class="cursor"><a routerLink="/about">关于</a></li>
+            </ul>
+        </div>
+        <div class="head-nav fr">
+            <ul class="nav-list userNull fr"><a routerLink="/login"></a>
+                <li *ngIf="!isLogin">登录/注册</li>
+                <ng-container *ngIf="isLogin">
+                    <div class="initiateDiv"><img style="margin-top: -30px;" src="/assets/img/startIcon.png"><span
+                            class="divase" onclick="ifjl()">发起项目</span></div>
+                    <div class="bgcenter userLogin" style="background-image:url('/assets/img/imgMR.jpg')"><a
+                            routerLink="/personal"></a></div>
+                </ng-container>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<ng-content></ng-content>

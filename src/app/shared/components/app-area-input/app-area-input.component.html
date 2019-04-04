@@ -1,0 +1,7 @@
+<div class="contentP contentPs dlregion1F">
+    <label class="labelNick" for="">所在地</label>
+    <input (click)="listAreas()" [(ngModel)]="value" class="region" readonly="readonly" type="text" value="请选择">
+    <dl class="dlregion1" *ngIf="areas.length>0">
+        <dd *ngFor=" let area of areas" (click)="listAreas(area.id,area.name)">{{area.name}}</dd>
+    </dl>
+</div>

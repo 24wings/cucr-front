@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="loginNav">
+    <img src="/assets/img/5.png" alt="">
+    <div class="container loginNavCon">
+        <div class="loginNavConC">
+            <h1>sign in</h1>
+            <h6>登录</h6>
+            <div class="phoneNum">
+                <input type="text" [(ngModel)]="phone" placeholder="请输入手机号">
+            </div>
+            <!-- <div class="qrNum">
+                    <input type="text" placeholder="请输入验证码">
+                    <span>获取验证码</span>
+                </div> -->
+            <div class="pwdNum">
+                <input type="password" [(ngModel)]="password" placeholder="请输入密码">
+            </div>
+            <div class="loginBtn" (click)="login()">登录</div>
+            <div class="loginChange">
+                <a routerLink="/pre-register">注册</a>
+                <a onclick="changePwd()" href="#">修改密码</a>
+            </div>
+            <p class="agreep">登录即表示同意《服务协议》</p>
+        </div>
+    </div>
+</div>
+
+
+<app-footer>
+
+</app-footer>
